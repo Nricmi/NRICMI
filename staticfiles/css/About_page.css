@@ -1,0 +1,142 @@
+Banner Styling with Overlay
+.hero {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background: #e6e8ff;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    animation: slide 12s infinite;
+}
+
+.slides img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slides img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.section {
+    padding: 2rem;
+    background: white;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #35424a;
+    border-bottom: 3px solid #35424a;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.section p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0 0;
+}
+/* Section Styling */
+.two-column-section {
+    padding: 50px 0; /* Spacing around the section */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.two-column-section h2 {
+    font-size: 36px;
+    color: #041D78;
+    margin-bottom: 20px;
+}
+
+.two-column-section p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #333;
+    text-align: justify;
+}
+
+.two-column-section img {
+    max-width: 100%; /* Ensure the image scales responsively */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+/* Text-Only Section Styling */
+.text-only-section {
+    padding: 50px 0; /* Top and bottom spacing */
+    background-color: #ffffff; /* White background for contrast */
+    color: #333; /* Text color */
+    text-align: justify; /* Center-align text */
+    border-top: 2px solid #041D78; /* Optional: Top border for visual separation */
+}
+
+.text-only-section h2 {
+    font-size: 32px;
+    color: #041D78; /* Same primary color as other headings */
+    margin-bottom: 20px;
+}
+
+.text-only-section p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #555; /* Slightly lighter text color for better readability */
+}
+
+/* General Section Styling */
+.vision-section, .mission-section {
+    padding: 60px 0;
+    background-color: #f9f9f9; /* Light background for separation */
+    border-top: 2px solid #041D78; /* Optional: Top border for visual separation */
+}
+
+.vision-section h2, .mission-section h2 {
+    font-size: 2rem;
+    color: #041D78; /* Match NRICMI branding */
+    margin-bottom: 20px;
+}
+
+.vision-section p, .mission-section p {
+    font-size: 1rem;
+    color: #555; /* Subtle text color */
+    line-height: 1.6;
+}
+
+/* Image Styling */
+.vision-section img, .mission-section img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    border-radius: 10px;
+}

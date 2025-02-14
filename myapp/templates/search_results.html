@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        .no-results {
+            color: red;
+            font-weight: bold;
+        }
+        body{
+  font-family: "Poppins", serif;
+}
+    </style>
+</head>
+<style>
+  body{
+    margin-top:225px !important;
+  }
+</style>
+<body>
+    <!-- search_results.html -->
+    {% extends "base_generic.html" %}
+
+    {% block content %}
+      <h1>Search Results</h1>
+    
+      {% if query %}
+        <p>You searched for: <strong>{{ query }}</strong></p>
+      {% endif %}
+    
+      {% if results %}
+        <ul>
+          {% for result in results %}
+            <li>
+              <a href="{{ result.url }}">{{ result.title }}</a>
+              <p>{{ result.body }}</p>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p>No matching results found.</p>
+      {% endif %}
+    {% endblock %}
+    
+    <footer>	
+      <div class="container">
+        <div class="row">
+        <div class="col-md-3">
+          <h6><b>NRICMI</b></h6>
+          <p>Room no:703 & 706<br>
+          6th floor<br> Convergence Accademic Complex
+          <br>Mahatma Gandhi University<br>Priyadarsinihills PO 
+        <br>Athirampuzha,Kottayam<br>
+          Kerala, India,686560</p>
+          <ul class="social">
+              <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+              <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+              <li><i class="fa fa-youtube" aria-hidden="true"></i></li>
+          </ul>
+          </div>
+        <div class="col-md-3">
+          <h6><b>Usefull links</b></h6>
+          <ul>
+            <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="{'% url 'about' %'}" style="text-decoration:none; color: white;">About</a></li>
+            <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="{'% url 'gallery' %'}" style="text-decoration:none; color: white;">Gallery</a></li>
+            <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="{'% url 'teams' %'}" style="text-decoration:none; color: white;">Team</a></li>
+            <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="{'% url 'mgu' %'}" style="text-decoration:none; color: white;">More MGU</a></li>
+          </ul>
+          </div>
+        <div class="col-md-3">
+          <h6><b>Research Areas</b></h6>
+          <ul>
+            <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="{'% url 'facilities' %'}" style="text-decoration:none; color: white;">Facilities</a></li>
+            <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="{'% url 'areas' %'}" style="text-decoration:none; color: white;">Areas</a></li>
+            <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="{'% url 'opportunity' %'}" style="text-decoration:none; color: white;">Opportunites</a></li>
+            <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#" style="text-decoration:none; color: white;">Translational Activity</a></li>
+          </ul>	
+          </div>
+          <div class="col-md-3">
+          <h6><b>Find us &nbsp; <i class="fa fa-map-marker" aria-hidden="true"></i></b><br></h6>
+          <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d903.0430781774104!2d76.5335437072633!3d9.657452556125302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07d5007a5a305d%3A0xc2ab240a4d605f0e!2sDr.%20N%20Radhakrishnan%20International%20Center%20for%20Medical%20Innovation%20-%20NRICMI!5e0!3m2!1sen!2sin!4v1728475540303!5m2!1sen!2sin" width="280px" height="320px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="img-thumbnail"></iframe></p>	
+            
+          </div>
+        </div>
+        </div>
+      </footer>
+</body>
+</html>

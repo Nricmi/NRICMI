@@ -1,0 +1,170 @@
+
+
+/* Banner Styling with Overlay */
+
+
+.navbar-collapse{
+  font-size:14px;
+}
+
+.banner {
+  position: relative;
+  background:url("../images/29.jpeg") no-repeat center center/cover;
+
+  height: 70vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.banner-content {
+  max-width: 600px;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin: 0 0 10px;
+}
+
+.banner p {
+  font-size: 1.25rem;
+  margin: 10px 0 20px;
+}
+
+.banner .btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.banner .btn:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+.research-focus-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+  }
+  
+.research-focus-section h2 {
+  font-size: 2.5rem;
+  color: #041D78;
+  margin-bottom: 30px;
+}
+
+.accordion-button {
+  background-color: #041D78;
+  color: white;
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #041D78;
+  background-color: #e9ecef;
+}
+
+.accordion-body {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.footer-section {
+  background-color: #ebebeb;
+  color: #252525;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px; /* Space between columns */
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px; /* Minimum width for smaller screens */
+}
+
+.footer-column h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #262626;
+}
+
+
+
+.footer-column p, .footer-column ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-column ul {
+  list-style-type: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #1e1e1e;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #00bcd4;
+}
+
+.footer-map {
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #555;
+  padding-top: 20px;
+  font-size: 0.9em;
+}
+
+.footer-bottom p {
+  color: #aaa;
+}
+
+.scroll-to-top {
+  display: none; /* Initially hidden */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00bfaf;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: #0044b9;
+}
+  
+  

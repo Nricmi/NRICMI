@@ -1,0 +1,28 @@
+body{
+    padding-top: 70px;
+}
+
+/* Student Form Section Styling */
+.student-form-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.student-form-section h2 {
+    color: #041D78;
+    margin-bottom: 20px;
+}
+
+.student-form-section .btn-primary {
+    background-color: #041D78;
+    border: none;
+}
+
+.student-form-section .btn-success {
+    background-color: mediumseagreen;
+    border: none;
+}
+
+.student-form-section input[type="radio"] {
+    accent-color: mediumseagreen; /* Optional: Customize the radio button color */
+}

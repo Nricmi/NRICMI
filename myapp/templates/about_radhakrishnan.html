@@ -1,0 +1,173 @@
+{% load static %}
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>aboutNRICMI</title>
+<link href="{% static 'css/style_radhakrishnan.css' %}" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	</head>
+<style>
+	body{
+  font-family: "Poppins", serif;
+}
+</style>
+
+<body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<!--banner-->
+<nav class="navbar navbar-expand-lg  bg-light navbar-light"style="box-shadow:5px 8px 11px #8888; ">
+	
+	<button id="scrollToTop" title="Go to top">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+	
+  <div class="container-fluid">
+    <a class="navbar-brand " href="#"><img src="{% static 'images/mgulogo.png' &}"width="50px" height="50px">&nbsp;<img src="{% static 'images/23.jpeg' %}" width="50px" height="50px">&nbsp;<b Style="color:#041D78; font-size:25px; ">NRICMI</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+	<center>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'about' %}"><i class="fa fa-info-circle" aria-hidden="true" style="color:black;"></i>&nbsp;About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ravelry" aria-hidden="true" style="color:black;"></i>
+            Research
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'areas' %}">Areas</a></li>
+            <li><a class="dropdown-item" href="{% url 'facilities' %}">Facilities</a></li>
+			<li><a class="dropdown-item" href="{% url 'opportunity' %}">Opportunity</a></li>  
+          </ul>
+        </li>
+		   <li class="nav-item active">
+          <a class="nav-link" href="{% url 'teams' %}"><i class="fa fa-users" aria-hidden="true" style="color:black;">&nbsp;</i>Team</a>
+        </li>
+		  <li class="nav-item active">
+          <a class="nav-link" href="{% url 'gallery' %}"><i class="fa fa-picture-o" aria-hidden="true" style="color:black;"></i>&nbsp;Gallery</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><i class="fa fa-bookmark" aria-hidden="true"style="color:black;"></i>&nbsp;Translational Activity</a>
+        </li>
+		 <li class="nav-item">
+          <div class="container-fluid">
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"style="border-radius:25px;">
+      <button class="btn btn-outline-success" type="submit" style="border-radius:25px; background-color:mediumseagreen;"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </form>
+  </div>
+        </li>  
+      </ul>	
+    </div>
+	</center>
+	</div>
+</nav>
+  <header class="banner">
+        <div class="banner-content">
+            <h1>Dr.N.Radhakrishnan</h1>
+            <p>Biography</p>
+        </div>
+    </header>
+    <section id="biography">
+	<div class="row align-items-start">
+    <div class="col">
+        <h2>Biography</h2>
+        <p>Dr. N.K. Radhakrishnan was born in 1945 in Kerala, India, into a family of traditional Ayurvedic physicians. His journey from aspiring to become an engineer to becoming a world-renowned surgeon is a testament to his resilience and passion for medicine.</p>
+        <p>He served over 55 years in the medical field, including 43 years at St. Thomas Hospital, transforming it into a 500-bedded multispecialty NABH-accredited hospital. His pioneering work in treating Chronic Venous Diseases has set new standards in the medical community.</p>
+		<p>Performed over 50,000 minimally invasive procedures for venous diseases.</p>
+		<p></p>
+		</div>
+	<div class="col">
+		<img src="{% static 'images/IMG_0236.JPG' %}" width="100%" height="450px">
+		</div>
+		</div>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <div class="grid">
+            <div class="grid-item">
+                <h3>Award</h3><p>
+               <p><li>Lifetime Achievement Award (2014): Presented by former President of India, Smt. Pratibha Patil, in Pune.</li></p>
+			<p><li>Global Indian of the Year Award (2014): Conferred by Smt. Pratibha Patil in Pune.</li></p>
+				<p><li>International Gold Star Millennium Award (2013): Presented by Thailand's former Deputy PM, Mr. Korn Dabbaransi, in Bangkok.</li></p>
+				<p><li>Award of Excellence (2012): Received from the Moscow Malayalee Association, presented by Indian Ambassador H.E. Ajai Malhotra in Moscow.</li></p>
+				<p><li>BEST MALAYALI – 2019” by Kerala Kaumudi on 13th December 2019 at Kottayam,Kerala</li></p>
+				<div id="hide2">
+				<p><li>Best Doctor Award 2017” by Kairali-People TV on 11th Oct. 2017 at Kalpetta,Wayand, Kerala.</li></p>
+				<p><li>Medical Innovation Award 2023” presented by Mahatma Gandhi University, Kerala on the occasion of the Global Academic Carnival on 17th January 2023 at Kottayam.</li></p>
+            </div>
+			</div>
+            <div class="grid-item">
+                <h3>Publications</h3>
+                <p><li>Genesis, Pathophysiology, & Management of Venous Diseases” is an international reference book for Cardiologists, phlebologists, cardiovascular and vascular researchers, surgeons, Postgraduates and Biomedical scientists. Hospit</li></p>
+				<p><li>Research article: “Shear Stress Alterations Activate BMP4/pSMAD5 Signaling and InduceEndothelial Mesenchymal Transition in Varicose Veins”, Cells, 2021.10(12)</p></li>
+			
+			<p><li>Covid-19 Awareness Book (2021): Covid-19, Corona enna vyali-Oravalokanam was published by Dr. N. Radhakrishnan Foundation and Cornet Books, Kottayam.</li></p>
+			<div id="hide2">
+			<p><li>Book on PM Modi (2018): Modi, Navabharathathinte Soorya Tejus (Modi, The Sunny Splendor of Resurgent India) was published by Punyadarsanam Books, Kottayam.</li></p>
+			<p><li>Research Article (2020): Hemodynamics Mediated Epigenetic Regulators in the Pathogenesis of Vascular Diseases was published in Molecular and Cellular Biochemistry.</li></p>
+			</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vision">
+        <h2>Vision & Mission</h2>
+        <p>Dr. Radhakrishnan's foundation offers scholarships for post-doctoral fellows in advanced venous disease research. His vision includes preventing venous diseases in future generations through genetic corrections and innovative treatments.He is actively involved in philanthropic activities, supporting rehabilitation centers and underprivileged communities, showcasing his commitment to societal well-being.
+		Done about 40,000 minimally invasive procedures for Varicose Veins (Modified Microfoam Sclerotherapy) which is a world record. Brought out “Newer Outlooks & Trends in the Etiopathogenesis & Management of Varicose Veins of the Lower Limbs”.</p>
+    </section>
+	<footer>	
+		<div class="container">
+			<div class="row">
+			<div class="col-md-3">
+				<h6><b>NRICMI</b></h6>
+				<p>Room no:703 & 706<br>
+				6th floor<br> Convergence Accademic Complex
+				<br>Mahatma Gandhi University<br>Priyadarsinihills PO 
+			<br>Athirampuzha,Kottayam<br>
+				Kerala, India,686560</p>
+				<ul class="social">
+						<li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+						<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+						<li><i class="fa fa-youtube" aria-hidden="true"></i></li>
+				</ul>
+				</div>
+			<div class="col-md-3">
+				<h6><b>Usefull links</b></h6>
+				<ul>
+					<li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="{'% url 'about' %'}" style="text-decoration:none; color: white;">About</a></li>
+					<li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="{'% url 'gallery' %'}" style="text-decoration:none; color: white;">Gallery</a></li>
+					<li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="{'% url 'teams' %'}" style="text-decoration:none; color: white;">Team</a></li>
+					<li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="{'% url 'mgu' %'}" style="text-decoration:none; color: white;">More MGU</a></li>
+				</ul>
+				</div>
+			<div class="col-md-3">
+				<h6><b>Research Areas</b></h6>
+				<ul>
+					<li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="{'% url 'facilities' %'}" style="text-decoration:none; color: white;">Facilities</a></li>
+					<li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="{'% url 'areas' %'}" style="text-decoration:none; color: white;">Areas</a></li>
+					<li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="{'% url 'opportunity' %'}" style="text-decoration:none; color: white;">Opportunites</a></li>
+					<li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#" style="text-decoration:none; color: white;">Translational Activity</a></li>
+				</ul>	
+				</div>
+				<div class="col-md-3">
+				<h6><b>Find us &nbsp; <i class="fa fa-map-marker" aria-hidden="true"></i></b><br></h6>
+				<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d903.0430781774104!2d76.5335437072633!3d9.657452556125302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07d5007a5a305d%3A0xc2ab240a4d605f0e!2sDr.%20N%20Radhakrishnan%20International%20Center%20for%20Medical%20Innovation%20-%20NRICMI!5e0!3m2!1sen!2sin!4v1728475540303!5m2!1sen!2sin" width="280px" height="320px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="img-thumbnail"></iframe></p>	
+					
+				</div>
+			</div>
+			</div>
+		</footer>
+</body>
+</html>
